@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10+Charted&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap')
+
+	.platypi- {	
+  font-family: "Platypi", serif;
+  font-optical-sizing: auto;
+  font-weight: <300>;
+  font-style: SemiBold;
+}
+	
+.jersey-10-charted-regular {
+  font-family: "Jersey 10 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {font-family: "Lato", sans-serif;background: #F39EFF}
+	h1 {font-family: "Platypi", serif;}
+	h2 {font-family: "Jersey 10 Charted", sans-serif; font-size: 90px}
+.mySlides {display: none}
+.w3 {}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" style="background-color: #d1aece">
+  <div class="w3-bar w3-card" style="color: #A400BB">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">MAIN PAGE</a>
+    <a href="#bugs" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BUGS</a>
+    <a href="#birds" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BIRDS</a>
+    <a href="#fish" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FISH</a>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+
+
+</div>
+
+<!-- Page content -->
+
+
+  <!-- The Band Section -->
+  <div class="w3-container  w3-padding-64" id="band">
+	  <div class="row">
+  <div class="column"><img src="images/bee.jpg" alt="bee" width="450"></div>
+  <div class="column"><h1 align="center"><strong>GO FIND ANIMALS</strong></h1><br><p align="center">Recently, there's been a surge in young people not going outside much. This is a pretty bad thing, as it leads to overexposure to screens, lack of sunlight, and lower dopamine level. it also makes them blind to the interesting ecosystems that happen, and all the unique animals found within them. Discovering and finding animals has been a popular hobby, taking form in multiple different ways such as fishing and birdwatching. With the huge number of species worldwide, there are plenty of animals to try and find!&nbsp; &nbsp; &nbsp; &nbsp; </p>
+  </div>
+  <div class="column"><img align="right"
+	   src="images/frog.jpg" alt="bee" width="450"></div>
+</div>
+	  <div class= "w3-container w3-center"><h2>Which one of these do you like the most?</h2>
+	   <div class="column" >
+	  <a href="#bugs" style="color: #256b35"><h2 style="background-color: #87e89c">Bugs</h2></a>
+	  </div>
+	  <div class="column">
+	  <a href="#birds" style="color: #25576b"><h2 style="background-color:#87e5e8">Birds</h2></a>
+	  </div>
+	  <div class="column">
+	  <a href="#fish" style="color: #25276b"><h2 style="background-color:#878fe8">Fish</h2></a>
+	  </div>
+	 
+	  </div>
+  
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px; background-color: " id="bugs">
+    <h2 class="w3-wide w3-center">BUGS</h2><br><p align="center">Insects are not normally seen positively, being viewed by most people as pests and dangers. But beyond the spiders and snails everyone freaks out about, there are lots of wild and unique types of insects that are marvels to behold! From the buzzing bumblebee to the graceful grasshopper, lots of insects that can make you excited rather than scared exist!&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
+	   src="images/American_Bird_Grasshopper.jpg" alt="grasshopper" width="450"> <br><img 
+	   src="images/download.jpg" alt="bee" width="450"></p>
+	  </div>
+	 <div class="w3-container w3-content w3-padding-64" style="max-width:800px; background-color: " id="birds">
+    <h2 class="w3-wide w3-center">BIRDS</h2><br><p align="center">The least freaky out of the three, birds are adored worldwide for their vibrant and unique bodies alongside the cute noises they make. There are so many different types across the world, and watching them has become a very popular hobby in itself, with places to wtach birds worldwide. Spotting an uncommon bird is always a thrill!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
+	   src="images/bluebird.png" alt="bird" width="450"> <br><img 
+	   src="images/birdwatching.jpg" alt="bee" width="450"></p>
+    </div>
+	 <div class="w3-container w3-content w3-padding-64" style="max-width:800px; background-color: " id="fish">
+    <h2 class="w3-wide w3-center">FISH</h2><br><p align="center">A classic in the world of animal hunting, fishing was originally done by our ancestors as a source of food. Nowadays, it is done by massive ships to be sold off at markets, by some people looking to eat organic seafood or even just for fun to see what they can catch. There are massive fishing communities, with dedicated shops for fishing apparel and tons of material online for how and where to fish!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
+	   src="images/fish1.png" alt="bird" width="450"> <br><img 
+	   src="images/fish2.png" alt="bee" width="450"></p>
+    
+		 
+		 
+</div>
+
+  
+<!-- End Page Content -->
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xxlarge" style="background-color: #d11736">
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>

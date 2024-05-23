@@ -87,6 +87,50 @@ body {font-family: "Lato", sans-serif;background: #F39EFF}
 	  </div>
 	  <div class="column">
 	  <a href="#birds" style="color: #25576b"><h2 style="background-color:#87e5e8">Birds</h2></a>
+		  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/moth.jpg" width="450">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/parrot.png" width="450">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/trout.png" width="450">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 	  </div>
 	  <div class="column">
 	  <a href="#fish" style="color: #25276b"><h2 style="background-color:#878fe8">Fish</h2></a>
@@ -94,18 +138,91 @@ body {font-family: "Lato", sans-serif;background: #F39EFF}
 	 
 	  </div>
   
+	  
+	 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+
+</body>
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px; background-color: " id="bugs">
-    <h2 class="w3-wide w3-center">BUGS</h2><br><p align="center">Insects are not normally seen positively, being viewed by most people as pests and dangers. But beyond the spiders and snails everyone freaks out about, there are lots of wild and unique types of insects that are marvels to behold! From the buzzing bumblebee to the graceful grasshopper, lots of insects that can make you excited rather than scared exist!&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
+    <h2 class="w3-wide w3-center">BUGS</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/ysRT6bQdqOA?si=j3RHAZopA67sf-sh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><p align="center">Insects are not normally seen positively, being viewed by most people as pests and dangers. But beyond the spiders and snails everyone freaks out about, there are lots of wild and unique types of insects that are marvels to behold! From the buzzing bumblebee to the graceful grasshopper, lots of insects that can make you excited rather than scared exist!&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
 	   src="images/American_Bird_Grasshopper.jpg" alt="grasshopper" width="450"> <br><img 
 	   src="images/download.jpg" alt="bee" width="450"></p>
 	  </div>
 	 <div class="w3-container w3-content w3-padding-64" style="max-width:800px; background-color: " id="birds">
-    <h2 class="w3-wide w3-center">BIRDS</h2><br><p align="center">The least freaky out of the three, birds are adored worldwide for their vibrant and unique bodies alongside the cute noises they make. There are so many different types across the world, and watching them has become a very popular hobby in itself, with places to wtach birds worldwide. Spotting an uncommon bird is always a thrill!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
+    <h2 class="w3-wide w3-center">BIRDS</h2><br><iframe width="560" height="315" src="https://www.youtube.com/embed/IfLIYOh8qEU?si=ZJLPTERtxegbBKSH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><p align="center">The least freaky out of the three, birds are adored worldwide for their vibrant and unique bodies alongside the cute noises they make. There are so many different types across the world, and watching them has become a very popular hobby in itself, with places to wtach birds worldwide. Spotting an uncommon bird is always a thrill!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
 	   src="images/bluebird.png" alt="bird" width="450"> <br><img 
 	   src="images/birdwatching.jpg" alt="bee" width="450"></p>
     </div>
 	 <div class="w3-container w3-content w3-padding-64" style="max-width:800px; background-color: " id="fish">
-    <h2 class="w3-wide w3-center">FISH</h2><br><p align="center">A classic in the world of animal hunting, fishing was originally done by our ancestors as a source of food. Nowadays, it is done by massive ships to be sold off at markets, by some people looking to eat organic seafood or even just for fun to see what they can catch. There are massive fishing communities, with dedicated shops for fishing apparel and tons of material online for how and where to fish!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
+    <h2 class="w3-wide w3-center">FISH</h2><iframe width="560" height="315" src="https://www.youtube.com/embed/atd28n7CB-c?si=zkL6GUnHvbKBPU6t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><p align="center">A classic in the world of animal hunting, fishing was originally done by our ancestors as a source of food. Nowadays, it is done by massive ships to be sold off at markets, by some people looking to eat organic seafood or even just for fun to see what they can catch. There are massive fishing communities, with dedicated shops for fishing apparel and tons of material online for how and where to fish!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br><img 
 	   src="images/fish1.png" alt="bird" width="450"> <br><img 
 	   src="images/fish2.png" alt="bee" width="450"></p>
     
@@ -113,7 +230,7 @@ body {font-family: "Lato", sans-serif;background: #F39EFF}
 		 
 </div>
 
-  
+
 <!-- End Page Content -->
 
 
@@ -122,8 +239,70 @@ body {font-family: "Lato", sans-serif;background: #F39EFF}
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xxlarge" style="background-color: #d11736">
   <i class="fa fa-twitter w3-hover-opacity"></i>
   <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<h1 style="text-align: center"> FEEDBACK FORM </h1> 
+<form name="RegForm" onsubmit="return scriptForm()" method="post">  
+
+  <p>Name: <input type="text" size="65" name="Name"> </p><br> 
+    <p>E-mail Address: <input type="text" size="65" name="EMail">  </p><br> 
+	<p>Feedback: <br><textarea name="comment"></textarea></p>
+
+
+  <p><input type="submit" value="Send" name="Submit"> 
+        <input type="reset" value="Reset" name="Reset"> 
+    </p> 
+</form> 
+<script> 
+function scriptForm() 
+{ 
+    var name = document.forms["RegForm"]["Name"];               
+    var email = document.forms["RegForm"]["EMail"];    
+    var comment = document.forms["RegForm"]["comment"];  
+    //checks if name field is empty
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+
+    //checks if email field is empty
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+
+    //checks if email field contains @
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+
+    //checks if email field contains .
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+
+    if (comment.value == "")                                  
+    { 
+        window.alert("Enter some feedback."); 
+        comment.focus(); 
+        return false; 
+    } 
+
+    //if everything is filled up/selected then submission will continue without the browser giving any alert dialog boxes
+    return true; 
+}
+</script> 
+	
 </footer>
 
 
-</body>
+
 </html>
